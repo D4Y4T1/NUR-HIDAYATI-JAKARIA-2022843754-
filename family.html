@@ -1,0 +1,161 @@
+<html>
+<head>
+  <title>FAMILY</title>
+  <link rel="stylesheet" type="text/css" href="resource/css/style.css">
+</head>
+
+<body>
+  <a name="TOP_PAGE"></a>
+
+  <header>
+    <a href="index.html">
+      <img src="resource/icon/logo.png" height="25%" width="15%" title="Nur Hidayati">
+    </a>
+  </header>
+
+  <hr>
+
+  <nav>
+    <div class="topnav">
+      <table cellspacing="5" cellpadding="5">
+        <tr>
+          <td><a href="index.html">HOME</a></td>
+          <td><a href="biography.html">BIOGRAPHY</a></td>
+          <td><a href="family.html">FAMILY</a></td>
+          <td><a href="friends.html">FRIENDS</a></td>
+          <td><a href="education.html">EDUCATION</a></td>
+          <td><a href="hobby.html">HOBBIES</a></td>
+          <td><a href="entertainment.html">MY INTEREST</a></td>
+        </tr>
+      </table>
+    </div>
+  </nav>
+
+  <hr>
+
+<br>
+
+  <p class="title">
+    My Family &#128525;
+  </p>
+
+
+<div class="slideshow-container">
+
+  <center><div class="mySlides fade">
+    <img src="resource/image/family1.jpeg" style="width:50%" style="height:60%" border="3" style="border-color: white;">
+  </div></center>
+
+  <center><div class="mySlides fade">
+    <img src="resource/image/family2.jpeg" style="width:50%" style="height:60%" border="3">
+  </div></center>
+
+  <center><div class="mySlides fade">
+    <img src="resource/image/family3.jpeg" style="width:50%" style="height:60%" border="3">
+  </div></center>
+
+  <center><div class="mySlides fade">
+    <img src="resource/image/family4.jpeg" style="width:50%" style="height:60%" border="3">
+  </div></center>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+     </div>
+       <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span>
+ </div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<br><br>
+
+<p class="subtitle">
+
+  <center><div class="container">
+    <img src="resource/image/mother.jpeg" style="width:50%;" hsapce="20%" border="3">
+    <div class="text-block">
+      <h4>19 October 1974</h4>
+      <p class="subtitle">Yusnah Binti Mohd Yusof (Mother)</p>
+    </div>
+  </div>
+ </center>
+
+  <center><div class="container">
+    <img src="resource/image/buchu.jpeg" style="width:50%;" style="height:30%;" hsapce="20%" border="3">
+    <div class="text-block">
+      <h4>2 April 1983</h4>
+      <p class="subtitle">Siti Norhani Binti Mohamad Yusof (Aunt)</p>
+    </div>
+  </div>
+ </center>
+
+  <center><div class="container">
+    <img src="resource/image/brother.jpeg" style="width:50%;" style="height:30%;" hsapce="20%" border="3">
+    <div class="text-block">
+      <h4>12 April 2008</h4>
+      <p class="subtitle">Muhammad Aliff Danial Bin Jakaria (Little Brother)</p>
+    </div>
+  </div>
+ </center>
+
+<br><br>
+
+
+  <hr>
+
+  <footer>
+    CONTACT INFORMATION: 01172685953 (HIDAYATI) <br>
+    SOCIAL MEDIA:
+    <a href="https://www.instagram.com/justme_dhiya" target="_blank">
+      <img src="resource/icon/instagram.jpg" width="26px" align="center">
+    </a>
+    <a href="https://www.tiktok.com/@justme_dhiya" target="_blank">
+      <img src="resource/icon/tiktok.png" width="26px" align="center">
+    </a>
+    <br>
+    EMAIL:
+    <a href="mailto:dhiyadayati284@gmail.com" target="_blank">
+      <img src="resource/icon/email.png" height="26px" width="26px" align="center">
+    </a>
+    <br>
+    <p>&copy; 2024 Hidayati Website. All right reserved.</p>
+    <a href="#TOP_PAGE">
+      <img src="resource/icon/up.png" height="13px" width="13px" align="right">
+    </a>
+  </footer>
+
+</body>
+</html>

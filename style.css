@@ -1,0 +1,187 @@
+body{
+  background-color:#C8A2C8;
+}
+
+p.title{
+    font-family:Bradley Hand ITC;
+    font-weight:bold;
+    text-align:center;
+    font-size:50px;
+    color:white;
+}
+
+p.subtitle{
+    font-family:Courier;
+    font-weight:bold;
+    text-align:center;
+    font-size:20px;
+    color:white;
+}
+
+{box-sizing: border-box}
+.mySlides {display: none}
+
+
+.slideshow-container{
+    max-width:1000px;
+    position:relative;
+    margin:auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 6px;
+  width: 6px;
+  margin: 0 2px;
+  background-color:#C8A2C8;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: white;
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.fade{
+   animation-name: fade;
+   animation-duration:10s;
+}
+
+@keyframes fade{
+   from{opacity: .4}
+   to{opacity:1}
+}
+
+
+header{
+   background-color: gray;
+   padding:20px;
+   text-align:left;
+   font-size:30px;
+   color:white;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: gray;
+}
+
+.topnav a {
+  float: center;
+  color: white;
+  text-align: center;
+  padding: 1px 34px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.topnav a:hover {
+  background-color: #C8A2C8;
+  color: white;
+}
+
+footer{
+   background-color: gray;
+   padding:4px;
+   text-align:left;
+   font-size:15px;
+   color:white;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding:10px 25px
+}
+
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+tr:nth-child(even) {
+  background-color: gray;
+}
+
+.container {
+  position: relative;
+  font-family: Britannic Bold;
+}
+
+.text-block {
+  position: center;
+  bottom: 10px;
+  right: 10px;
+  background-color: gray;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.image-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+      grid-gap: 20px;
+    }
+
+.image-gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px; /* Add rounded corners */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow effect */
+      transition: transform 0.3s ease-in-out;     }
+
+ .image-gallery img:hover {
+      transform: scale(1.05);
+    }
+
+.video-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px; 
+    }
+
+.video-container video {
+    width: 100%;
+    border: 3px solid black; 
+ }
+
+div.scroll-container {
+  background-color: gray;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 5px;
+}
+
+div.scroll-container img {
+  padding: 5px;
+}

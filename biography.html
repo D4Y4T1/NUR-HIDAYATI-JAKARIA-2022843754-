@@ -1,0 +1,146 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device=width, initial-scale=1">
+  <title>BIOGRAPHY</title>
+  <link rel="stylesheet" type="text/css" href="resource/css/style.css">
+</head>
+
+<body>
+  <a name="TOP_PAGE"></a>
+
+  <header>
+    <a href="index.html">
+      <img src="resource/icon/logo.png" height="25%" width="15%" title="Nur Hidayati">
+    </a>
+  </header>
+
+  <hr>
+
+  <nav>
+    <div class="topnav">
+      <table cellspacing="5" cellpadding="5">
+        <tr>
+          <td><a href="index.html">HOME</a></td>
+          <td><a href="biography.html">BIOGRAPHY</a></td>
+          <td><a href="family.html">FAMILY</a></td>
+          <td><a href="friends.html">FRIENDS</a></td>
+          <td><a href="education.html">EDUCATION</a></td>
+          <td><a href="hobby.html">HOBBIES</a></td>
+          <td><a href="entertainment.html">MY INTEREST</a></td>
+        </tr>
+      </table>
+    </div>
+  </nav>
+
+  <hr>
+
+<br><br>
+
+<div class="slideshow-container">
+
+    <center><div class="mySlides fade">
+      <img src="resource/image/myself4.jpeg" style="height:50%" border="2" style="border-color: gray;">
+    </div></center>
+
+    <center><div class="mySlides fade">
+      <img src="resource/image/myself5.jpeg" style="height:50%" border="2" style="border-color: white;">
+    </div></center>
+
+   <center><div class="mySlides fade">
+      <img src="resource/image/myself6.jpeg" style="height:50%" border="2" style="border-color: white;">
+   </div></center>
+
+  <center><div class="mySlides fade">
+      <img src="resource/image/myself7.jpeg" style="height:50%" border="2" style="border-color: white;">
+   </div></center>
+
+  <center> <div class="mySlides fade">
+      <img src="resource/image/myself8.jpeg" style="height:50%" border="2" style="border-color: white;">
+   </div></center>
+
+
+   <div style="text-align:center">
+       <span class="dot"></span>
+       <span class="dot"></span>
+       <span class="dot"></span>
+       <span class="dot"></span>
+       <span class="dot"></span>
+   </div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+ <p class="subtitle">
+  <table class="center">
+  <tr>
+    <th>Full Name</th>
+    <td>Nur Hidayati Binti Jakaria</td> 
+  </tr>
+  <tr>
+    <th>Nickname</th>
+    <td>Hidayati, Dhiya, Yati</td>
+  </tr>
+  <tr>
+    <th>Birthday</th>
+    <td>02 August 2004</td>
+  </tr>
+  <tr>
+    <th>Origin</th>
+    <td>Sabah</td>
+  </tr>
+  <tr>
+    <th>Age</th>
+    <td>20 Years Old</td>
+  </tr>
+  <tr>
+    <th>Race</th>
+    <td>Kedayan</td>
+  </tr>
+  </table>
+</p>
+
+  <hr>
+
+  <footer>
+    CONTACT INFORMATION: 01172685953 (HIDAYATI) <br>
+    SOCIAL MEDIA:
+    <a href="https://www.instagram.com/justme_dhiya" target="_blank">
+      <img src="resource/icon/instagram.jpg" width="26px" align="center">
+    </a>
+    <a href="https://www.tiktok.com/@justme_dhiya" target="_blank">
+      <img src="resource/icon/tiktok.png" width="26px" align="center">
+    </a>
+    <br>
+    EMAIL:
+    <a href="mailto:dhiyadayati284@gmail.com" target="_blank">
+      <img src="resource/icon/email.png" height="26px" width="26px" align="center">
+    </a>
+    <br>
+    <p>&copy; 2024 Hidayati Website. All right reserved.</p>
+    <a href="#TOP_PAGE">
+      <img src="resource/icon/up.png" height="13px" width="13px" align="right">
+    </a>
+  </footer>
+
+
+</body>
+</html>
